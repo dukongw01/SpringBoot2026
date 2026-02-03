@@ -1,0 +1,5 @@
+package com.green.member.mapper;
+
+public interface MemberMapper {
+
+}

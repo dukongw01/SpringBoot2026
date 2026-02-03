@@ -1,0 +1,9 @@
+package com.green.board.mapper;
+
+import org.apache.ibatis.annotations.Mapper;
+
+@Mapper
+public interface BoardMapper {
+	//하나의 게시글 작성하여 추가하는 쿼리문
+	
+}

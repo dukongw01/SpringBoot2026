@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;address-list.html&apos; to &apos;sample_redirect/src/main/resources/templates&apos;&#x0D;&#x0A;- Original project: &apos;sample_redirect&apos;&#x0D;&#x0A;- Destination element: &apos;sample_redirect/src/main/resources/templates&apos;&#x0D;&#x0A;- Original element: &apos;address-list.html&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move file" destination="/src\/main\/resources=/gradle_scope=/main=/=/gradle_used_by_scope=/main,test=/&lt;templates" element1="src/main/java/com/green/address-list.html" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1769137038420" units="0" version="1.0"/>
+</session>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymleaf.com">
+	<header th:fragment="header">
+		<div id="top">
+			<h3>MEMBER JOIN</h3>
+		</div>
+		<div id="header_wrap">
+			<a th:href="@{/}">HOME</a>
+			<!-- 비로그인 상태일때 메뉴 바 -->
+		<th:block th:if="${session.loginmember == null}" >
+			<a th:href="@{/member/signup}">회원가입</a>
+			<a th:href="@{/member/login}">로그인</a>
+		</th:block>
+		
+		  <!-- 로그인 상태일때 메뉴 바 -->
+		<th:block th:if="${session.loginmember != null}" >
+		    <span th:if="${session.loginmember.id =='admin9867'}" style="color:blue;">관리자</span>
+		    
+		    <span th:unless="${session.loginmember.id =='admin9867'}">
+		    	  <span th:text="${session.loginmember.id}"></span>님 환영
+		    </span>
+		    <a th:href="@{/member/logout}">로그아웃</a>
+	
+	       <th:block th:if="${session.loginmember.id=='admin9867'}">
+	       		<a th:href="@{/member/list}" >[회원목록]</a>	       			       		
+	       </th:block>
+	       <a th:href="@{/member/memberInfo(id=${session.loginmember.id})}" >MyPage</a>
+		</th:block>
+			<a th:href="@{/board/list}">게시판</a>
+		</div>
+	</header>
+	<nav th:fragment="nav">
+		<div id="nav_wrap">
+			<a th:href="@{/example}">EXAMPLE</a>
+		</div>
+	</nav>
+	<footer th:fragment="footer">
+		<div id="footer_wrap">Copyright OFFICE @Green</div>
+	</footer>
+</html>
+
