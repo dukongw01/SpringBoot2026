@@ -3,9 +3,11 @@
 "https://mybatis.org/
 dtd/mybatis-3-config.dtd">
 <configuration>
+
 <typeAliases>
 	<typeAlias alias="MemberDTO" type="com.green.Member.MemberDTO"/>
 	<typeAlias alias="BoardDTO" type="com.green.board.BoardDTO"/>
+	<typeAlias alias="carDTO" type="com.green.carproduct.CarProductDTO"/>
 </typeAliases>
 
 </configuration>
